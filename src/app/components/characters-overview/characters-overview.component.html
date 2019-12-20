@@ -1,0 +1,9 @@
+<!-- <div *ngFor="let character of characterList">{{character.name}} {{character.url}}</div> -->
+<div class="cards-overview-container">
+	<div class="card-container" *ngFor="let character of characterList">
+		<app-character-card class="character-card" [name]="character.name" [image]="character.image"
+			[species]="character.species">
+		</app-character-card>
+	</div>
+
+</div>
